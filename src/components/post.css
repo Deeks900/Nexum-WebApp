@@ -1,0 +1,100 @@
+.post-container {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  flex-direction: column;
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-info > h5 {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.post-info > h5:hover {
+  text-decoration: underline;
+}
+
+.post-info > small {
+  margin-left: 10px;
+}
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-body > .post-question {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.post-body > .post-question > p:hover {
+  text-decoration: underline;
+}
+
+.post-body > img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.post-footer > .MuiSvgIcon-root {
+  color: gray;
+  /* margin-right: 40px; */
+  cursor: pointer;
+}
+
+.post-footer-content-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 33px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.post-footer-content-left > .MuiSvgIcon-root {
+  color: gray;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.post-footer-content-left > .MuiSvgIcon-root:hover {
+  color: red;
+  /* margin-right: 40px; */
+  cursor: pointer;
+}
+
+.post-footer-content-right {
+  margin-left: auto;
+}
+
+.post-footer-content-right > .MuiSvgIcon-root {
+  color: gray;
+  cursor: pointer;
+  margin-left: 30px;
+}
+

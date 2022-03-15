@@ -1,0 +1,39 @@
+.feed-container {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  background-color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.feed-container:hover {
+  border: 1px solid gray;
+}
+.feedUser-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedUser-info > h5 {
+  color: rgb(129, 129, 129);
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.feed-ques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.feed-ques > p {
+  color: gray;
+  font-weight: bold;
+  font-size: large;
+}
