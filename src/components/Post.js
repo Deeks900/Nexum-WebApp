@@ -7,13 +7,19 @@ import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Button from "@mui/material/Button";
 import "./post.css";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
 
 function Post() {
+  const user = useSelector(selectUser);
+
   return (
     <div className="post-container">
       <div className="post-info">
-        <Avatar />
-        <h5>Username</h5>
+        <Avatar 
+          src= {user.photo}
+        />
+        <h5>{user.displayName} </h5>
         <small>Timestamp</small>
       </div>
 

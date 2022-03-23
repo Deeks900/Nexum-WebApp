@@ -19,12 +19,19 @@ import LanguageIcon from "@mui/icons-material/Language";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import SearchIcon from "@mui/icons-material/Search";
 import "./navbar.css";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
+import { auth } from "../firebase";
+import { signOut } from "firebase/auth";
+
 
 const pages = ["Home", "Notifications", "Ask Questions"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
   
+  const user = useSelector(selectUser)
+
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -191,7 +198,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" onClick={ ()=> signOut(auth) } src={ user.photo} />
               </IconButton>
             </Tooltip>
             <Menu
