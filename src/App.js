@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Quora from './components/Quora';
+import Nexum from './components/Nexum';
 import './App.css';
 import {login,logout, selectUser} from "./features/userSlice";
 import {useSelector, useDispatch} from 'react-redux';
@@ -40,7 +40,7 @@ function App() {
     <div className="App">
      
       {
-          user ? (<Quora />) : (<Login />)
+          user ? (<Nexum />) : (<Login />)
       }
      
     </div>

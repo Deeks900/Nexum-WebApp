@@ -84,7 +84,7 @@ function Login() {
         </div>
 
         <div className="login__desc">
-          <p>A Place to Share knowledge and better understand the world</p>
+          <p>A Place To Share Knowledge & Better Understand The World</p>
           <p style={{ color: "royalblue",  fontSize: "25px" }}>
             Designed with ❤️ by{" "}
           </p>
